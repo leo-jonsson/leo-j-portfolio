@@ -15,14 +15,14 @@ const items = [
     date: "Mar 2025 - Ongoing",
     title: "Full Stack Developer | Redmind - Internship",
     description:
-      "Completed wireframes and user interface mockups. Stakeholder review and feedback incorporated.",
+      "Building mobile apps in React Native using modern techonologies.",
   },
   {
     id: 2,
     date: "Aug 2023 - Jun 2025",
     title: "Frontend Development | Noroff - Study",
     description:
-      "Initial team meeting and project scope definition. Established key milestones and resource allocation.",
+      "Frontend Development program @ Noroff Higher Vocational School",
   },
 ];
 
