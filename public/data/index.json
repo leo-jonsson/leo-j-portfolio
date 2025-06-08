@@ -27,11 +27,9 @@
         "url": "https://apps.apple.com/eg/app/seagrid/id6479172067"
       }
     ],
-
     "period": "April 2025 - Ongoing",
     "content": "<p>An app connected to a boat alarm for boat clubs. I have worked with both the frontend in React Native, where I followed design guidelines from Figma and adapted solutions according to the designer's wishes.</p><p>I have also worked with the backend in NestJS where the logic and functionality for the app is handled.</p><p>Since the app is connected to the alarm's hardware, I have also had the opportunity to learn how the integration between software and device works.</p>"
   },
-
   {
     "id": "holidaze",
     "title": "Holidaze",
@@ -64,6 +62,37 @@
     ]
   },
   {
+    "id": "img-gallery",
+    "title": "IMDB / TMDB clone (JS Frameworks)",
+    "tech": [
+      "Next.js",
+      "Typescript",
+      "Uploadthing",
+      "ShadCN",
+      "Clerk",
+      "Supabase",
+      "Framer Motion"
+    ],
+    "images": [
+      {
+        "url": "/assets/Img-gallery.png",
+        "alt": "Screenshot of the Img Gallery project"
+      }
+    ],
+    "links": [
+      {
+        "label": "Deployed Demo",
+        "url": "https://img-gallery-lnos1ii8j-leos-projects-fd38cbea.vercel.app/"
+      },
+      {
+        "label": "Github Repo",
+        "url": "https://github.com/leo-jonsson/img-gallery"
+      }
+    ],
+    "period": "December 2025",
+    "content": "<p>Img Gallery is a full-stack web application developed with Next.js, serving as a comprehensive entertainment platform akin to an IMDB clone. Users can seamlessly browse an extensive database of movies and series, explore detailed information, and save their favorite titles to a personalized watchlist for later viewing.</p><p>Beyond media browsing, the platform features a robust blog section where users can publish their own articles, fostering a community for shared insights and discussions on various entertainment topics.</p><p>The application leverages a powerful tech stack including Next.js for server-side rendering and API routes, TypeScript for type safety, Uploadthing for efficient file uploads, Shadcn UI for beautiful and accessible components, Clerk for secure user authentication, and Supabase for its backend database and authentication services. Framer Motion is integrated to deliver smooth and engaging UI animations, enhancing the overall user experience.</p>"
+  },
+  {
     "id": "wellness",
     "title": "Swedish Wellness App",
     "tech": [
@@ -79,7 +108,6 @@
         "alt": "image of a wellness mobile app"
       }
     ],
-
     "period": "March 2025 - Ongoing",
     "content": "<p>A wellness app for both businesses and individuals where I work on frontend development using React Native, following design guidelines and implementing solutions based on the designer’s requirements.</p><p>In this project, I have primarily focused on optimizing components and adding functionality that enhances the user experience.</p>"
   },

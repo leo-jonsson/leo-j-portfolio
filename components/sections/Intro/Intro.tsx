@@ -5,7 +5,7 @@ import React from "react";
 const Intro = () => {
   return (
     <Section>
-      <h1 className="text-4xl font-bold text-center">Hi, i&apos;m Leo 👋</h1>
+      <h1 className="text-4xl font-bold text-center">Hi, I&apos;m Leo 👋</h1>
       <p className="text-2xl text-muted-foreground text-center">
         Fullstack developer{" "}
         <Link

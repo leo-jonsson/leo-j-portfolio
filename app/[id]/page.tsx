@@ -21,12 +21,10 @@ const ProjectPage = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center relative">
-      <div className="absolute top-10 left-0">
+      <Section>
         <Link href={"/"}>
           <ArrowLeft />
         </Link>
-      </div>
-      <Section>
         <h1 className="text-5xl font-bold mb-2">{project.title}</h1>
         <h2 className="text-muted-foreground mb-4">{project.period}</h2>
         {project.images && project.images.length > 0 && (
