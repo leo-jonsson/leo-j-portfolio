@@ -65,7 +65,7 @@ const Projects = () => {
                 ))}
               </div>
               {project.links && (
-                <div className="flex flex-wrap gap-3">
+                <div className="flex flex-wrap gap-3 mt-3">
                   {project.links.map((link, idx) => (
                     <Link
                       key={idx}

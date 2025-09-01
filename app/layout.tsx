@@ -23,14 +23,9 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${montserrat.className} ${montserrat.variable} antialiased `}
+        className={`${montserrat.className} ${montserrat.variable} antialiased transition-all`}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <main className="max-w-[40rem] flex flex-col justify-center items-center mx-auto">
             {children}
             <div className="h-[7rem]" />

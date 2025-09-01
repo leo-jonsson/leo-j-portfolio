@@ -1,7 +1,7 @@
 [
   {
     "id": "seagrid",
-    "title": "Seagrid App",
+    "title": "Seagrid",
     "tech": [
       "React Native",
       "Payload",
@@ -9,7 +9,8 @@
       "NestJS",
       "Firebase",
       "React Query",
-      "Typescript"
+      "TypeScript",
+      "AWS"
     ],
     "images": [
       {
@@ -31,86 +32,33 @@
     "content": "<p>An app connected to a boat alarm for boat clubs. I have worked with both the frontend in React Native, where I followed design guidelines from Figma and adapted solutions according to the designer's wishes.</p><p>I have also worked with the backend in NestJS where the logic and functionality for the app is handled.</p><p>Since the app is connected to the alarm's hardware, I have also had the opportunity to learn how the integration between software and device works.</p>"
   },
   {
-    "id": "holidaze",
-    "title": "Holidaze",
-    "tech": [
-      "Next.js",
-      "Typescript",
-      "ShadCN",
-      "Framer Motion",
-      "Google maps API",
-      "OPENAI",
-      "Noroff API"
-    ],
-    "period": "April 2025 - May 2025",
-    "content": "<p>This project is a venue booking platform built with Next.js, integrating with the Noroff API for venue data and booking functionality. It utilizes several modern technologies to provide a rich and interactive user experience, including OpenAI via the Vercel AI SDK, Google Maps API, Shadcn UI for components, and Framer Motion for animations.</p>",
-    "images": [
-      {
-        "url": "/assets/Holidaze.png",
-        "alt": "image of Holidaze project"
-      }
-    ],
-    "links": [
-      {
-        "label": "Deployed Demo",
-        "url": "https://holidaze-eight-xi.vercel.app/"
-      },
-      {
-        "label": "Github Repo",
-        "url": "https://github.com/leo-jonsson/holidaze"
-      }
-    ]
-  },
-  {
-    "id": "img-gallery",
-    "title": "IMDB / TMDB clone (JS Frameworks)",
-    "tech": [
-      "Next.js",
-      "Typescript",
-      "Uploadthing",
-      "ShadCN",
-      "Clerk",
-      "Supabase",
-      "Framer Motion"
-    ],
-    "images": [
-      {
-        "url": "/assets/Imggallery.png",
-        "alt": "Screenshot of the Img Gallery project"
-      }
-    ],
-    "links": [
-      {
-        "label": "Deployed Demo",
-        "url": "https://img-gallery-lnos1ii8j-leos-projects-fd38cbea.vercel.app/"
-      },
-      {
-        "label": "Github Repo",
-        "url": "https://github.com/leo-jonsson/img-gallery"
-      }
-    ],
-    "period": "December 2025",
-    "content": "<p>Img Gallery is a full-stack web application developed with Next.js, serving as a comprehensive entertainment platform akin to an IMDB clone. Users can seamlessly browse an extensive database of movies and series, explore detailed information, and save their favorite titles to a personalized watchlist for later viewing.</p><p>Beyond media browsing, the platform features a robust blog section where users can publish their own articles, fostering a community for shared insights and discussions on various entertainment topics.</p><p>The application leverages a powerful tech stack including Next.js for server-side rendering and API routes, TypeScript for type safety, Uploadthing for efficient file uploads, Shadcn UI for beautiful and accessible components, Clerk for secure user authentication, and Supabase for its backend database and authentication services. Framer Motion is integrated to deliver smooth and engaging UI animations, enhancing the overall user experience.</p>"
-  },
-  {
-    "id": "wellness",
-    "title": "Swedish Wellness App",
+    "id": "feelgood",
+    "title": "Feelgood App",
     "tech": [
       "React Native",
       "React Query",
       "Firebase",
       "Styled components",
-      "Typescript"
+      "TypeScript",
+      "Redux Toolkit"
     ],
     "images": [
       {
-        "url": "/assets/Wellness.png",
-        "alt": "image of a wellness mobile app"
+        "url": "/assets/Feelgood.png",
+        "alt": "feelgood print"
+      }
+    ],
+    "links": [
+      { "label": "Website", "url": "https://feelgood.se/" },
+      {
+        "label": "Download the app",
+        "url": "https://apps.apple.com/se/app/feelgood/id1454287441"
       }
     ],
     "period": "March 2025 - Ongoing",
     "content": "<p>A wellness app for both businesses and individuals where I work on frontend development using React Native, following design guidelines and implementing solutions based on the designer’s requirements.</p><p>In this project, I have primarily focused on optimizing components and adding functionality that enhances the user experience.</p>"
   },
+
   {
     "id": "aucsome",
     "title": "Aucsome",
@@ -147,7 +95,7 @@
     "tech": [
       "Vite",
       "React",
-      "Typescript",
+      "TypeScript",
       "OPENAI",
       "AWS Rekognition",
       "TailwindCSS"
@@ -166,5 +114,67 @@
     ],
     "period": "April 2025 - May 2025",
     "content": "This project was part of a workshop in Skövde, Sweden, where we gave a talk on the current state of AI—where it was yesterday, where it is today, and answered audience questions on the topic.</p><p>My role in this was to build a web application where we integrated AI functionality using AWS Face & Label Rekognition, OpenAI's object generator, and text generator via the Vercel AI SDK.</p><p>This was used as part of an AI seminar, allowing attendees to test and interact with the AI-powered features hands-on.</p>"
+  },
+  {
+    "id": "holidaze",
+    "title": "Holidaze",
+    "tech": [
+      "Next.js",
+      "TypeScript",
+      "ShadCN",
+      "Framer Motion",
+      "Google maps API",
+      "OPENAI",
+      "Noroff API"
+    ],
+    "period": "April 2025 - May 2025",
+    "content": "<p>This project is a venue booking platform built with Next.js, integrating with the Noroff API for venue data and booking functionality. It utilizes several modern technologies to provide a rich and interactive user experience, including OpenAI via the Vercel AI SDK, Google Maps API, Shadcn UI for components, and Framer Motion for animations.</p>",
+    "images": [
+      {
+        "url": "/assets/Holidaze.png",
+        "alt": "image of Holidaze project"
+      }
+    ],
+    "links": [
+      {
+        "label": "Deployed Demo",
+        "url": "https://holidaze-eight-xi.vercel.app/"
+      },
+      {
+        "label": "Github Repo",
+        "url": "https://github.com/leo-jonsson/holidaze"
+      }
+    ]
+  },
+  {
+    "id": "img-gallery",
+    "title": "JSFW",
+    "tech": [
+      "Next.js",
+      "TypeScript",
+      "Uploadthing",
+      "ShadCN",
+      "Clerk",
+      "Supabase",
+      "Framer Motion"
+    ],
+    "images": [
+      {
+        "url": "/assets/Imggallery.png",
+        "alt": "Screenshot of the Img Gallery project"
+      }
+    ],
+    "links": [
+      {
+        "label": "Deployed Demo",
+        "url": "https://img-gallery-lnos1ii8j-leos-projects-fd38cbea.vercel.app/"
+      },
+      {
+        "label": "Github Repo",
+        "url": "https://github.com/leo-jonsson/img-gallery"
+      }
+    ],
+    "period": "December 2025",
+    "content": "<p>Img Gallery is a full-stack web application developed with Next.js, serving as a comprehensive entertainment platform akin to an IMDB clone. Users can seamlessly browse an extensive database of movies and series, explore detailed information, and save their favorite titles to a personalized watchlist for later viewing.</p><p>Beyond media browsing, the platform features a robust blog section where users can publish their own articles, fostering a community for shared insights and discussions on various entertainment topics.</p><p>The application leverages a powerful tech stack including Next.js for server-side rendering and API routes, TypeScript for type safety, Uploadthing for efficient file uploads, Shadcn UI for beautiful and accessible components, Clerk for secure user authentication, and Supabase for its backend database and authentication services. Framer Motion is integrated to deliver smooth and engaging UI animations, enhancing the overall user experience.</p>"
   }
 ]
