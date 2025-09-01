@@ -25,7 +25,7 @@ const Section = ({ children }: SectionProps) => {
         initial="hidden"
         animate={controls}
         variants={{
-          hidden: { opacity: 0, y: 20, filter: "blur(8px)" },
+          hidden: { opacity: 0, y: 10, filter: "blur(8px)" },
           visible: {
             opacity: 1,
             y: 0,
@@ -33,7 +33,6 @@ const Section = ({ children }: SectionProps) => {
             transition: {
               duration: 0.3,
               ease: "easeOut",
-              staggerChildren: 0.2,
             },
           },
         }}

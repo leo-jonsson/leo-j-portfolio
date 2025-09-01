@@ -20,10 +20,10 @@ const ProjectPage = () => {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center relative">
+    <div className="min-h-[80vh] flex items-center justify-center relative mt-5">
       <Section>
         <Link href={"/"}>
-          <ArrowLeft />
+          <ArrowLeft className="mb-4" />
         </Link>
         <h1 className="text-5xl font-bold mb-2">{project.title}</h1>
         <h2 className="text-muted-foreground mb-4">{project.period}</h2>

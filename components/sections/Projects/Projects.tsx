@@ -31,12 +31,10 @@ const Projects = () => {
   return (
     <Section>
       <div className="grid py-10">
-        <h2 className="text-4xl font-bold mb-2 text-center">
-          Check out my latest work
-        </h2>
-        <h3 className="text-foreground/70 text-xl text-center max-w-[35rem] mx-auto leading-8">
-          These are some projects that I have been working on lately and am the
-          most proud of!
+        <h2 className="text-2xl font-bold">PROJECTS</h2>
+        <h3 className="text-foreground/70 text-base">
+          Things I&apos;m proud of. Load more to see things I&apos;m less proud
+          of.
         </h3>
       </div>
       <div className="md:grid-cols-2 grid gap-5">

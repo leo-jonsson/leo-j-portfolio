@@ -5,8 +5,8 @@ import React from "react";
 const Contact = () => {
   return (
     <Section>
-      <h2 className="text-4xl font-bold text-center">Contact</h2>
-      <p className="text-xl text-foreground/80 text-center leading-8">
+      <h2 className="text-2xl font-bold">CONTACT</h2>
+      <p className="text-base text-foreground/70">
         Want to get in touch?{" "}
         <Link
           href={"/https://x.com/leomrgreen"}

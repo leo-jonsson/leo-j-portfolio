@@ -1,21 +1,33 @@
 import MyTimeLine from "@/components/MyTimeline";
 import Section from "@/components/ui/section";
+import Link from "next/link";
 import React from "react";
 
 const About = () => {
   return (
-    <Section>
-      <h2 className="text-2xl font-bold">About</h2>
-      <p className="text-foreground/80">
-        {" "}
-        I am currently finishing my studies at <strong>Noroff</strong> as a
-        Frontend Developer. I&apos;m also doing an internship at{" "}
-        <strong>Redmind</strong>, where I work as a Full Stack Developer,
-        building mobile applications using <strong>React Native</strong>. In my
-        freetime I like to hang out with friends and travel the world.
-      </p>
-      <MyTimeLine />
-    </Section>
+    <>
+      <Section>
+        <h2 className="text-2xl font-bold">ABOUT</h2>
+        <p className="text-foreground/80">
+          22 year old Frontend Developer graduate who enjoys building stuff.
+          I&apos;m currently working for{" "}
+          <Link
+            href={"https://www.redmind.se/en/"}
+            target="_blank"
+            className="text-red-500 hover:underline transition-all"
+          >
+            Redmind
+          </Link>{" "}
+          as a Fullstack Engineer (internship) where I do everything from
+          building UI&apos;s, resolving bugs, maintaning and scaling backends
+          for our client&apos;s applications.
+        </p>
+      </Section>
+      <Section>
+        <h2 className="text-2xl font-bold">DEV JOURNEY</h2>
+        <MyTimeLine />
+      </Section>
+    </>
   );
 };
 

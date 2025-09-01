@@ -8,16 +8,22 @@ const skills: string[] = [
   "Firebase",
   "MongoDB",
   "NestJS",
-  "Mongoose",
   "React Query",
   "TailwindCSS",
+  "Redux",
   "NextJS",
+  "Vite",
+  "Payload CMS",
+  "AWS",
+  "Google Cloud Functions",
+  "Figma",
+  "Git",
 ];
 
 const Skills: React.FC = () => {
   return (
     <Section>
-      <h2 className="text-2xl font-bold mb-1">Skills</h2>
+      <h2 className="text-2xl font-bold mb-3">I LIKE WORKING WITH</h2>
       <div className="flex flex-wrap gap-2">
         {skills.map((s, idx) => (
           <Badge key={idx}>{s}</Badge>
