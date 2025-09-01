@@ -5,7 +5,7 @@ import { ModeToggle } from "./theme/theme-toggle";
 const Nav = () => {
   return (
     <nav className="fixed bottom-4 flex items-center justify-center w-full gap-3">
-      <div className="flex items-center justify-center gap-3 bg-transparent backdrop-blur-xl px-5 py-1 border rounded-full">
+      <div className="flex items-center justify-center gap-3 bg-background px-5 py-1 border rounded-full">
         <Link
           href={"https://www.linkedin.com/in/leo-jonsson-anetoft-b98048304/"}
           target="_blank"

@@ -1,10 +1,12 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
 import Section from "@/components/ui/section";
 import Link from "next/link";
+import projects from "@/public/data/index.json";
+import { Button } from "@/components/ui/button";
 
 type Project = {
   id: string;
@@ -16,17 +18,13 @@ type Project = {
   content: string;
 };
 const Projects = () => {
-  const [projects, setProjects] = useState<Project[]>([]);
+  const [loadMore, setLoadMore] = React.useState<boolean>(false);
 
-  useEffect(() => {
-    const fetchProjects = async () => {
-      const res = await fetch("/data/index.json");
-      const data = await res.json();
-      setProjects(data);
-    };
+  const projectsToShow = loadMore ? projects : projects.slice(0, 2);
 
-    fetchProjects();
-  }, []);
+  const handleOnClick = () => {
+    setLoadMore(true);
+  };
 
   return (
     <Section>
@@ -38,7 +36,7 @@ const Projects = () => {
         </h3>
       </div>
       <div className="md:grid-cols-2 grid gap-5">
-        {projects.map((project) => (
+        {projectsToShow.map((project: Project) => (
           <Card
             key={project.id}
             className="p-0 overflow-hidden gap-0 bg-background"
@@ -86,6 +84,12 @@ const Projects = () => {
           </Card>
         ))}
       </div>
+      <Button
+        onClick={handleOnClick}
+        className={`${loadMore ? "hidden" : "flex"} w-full mt-4`}
+      >
+        Load More
+      </Button>
     </Section>
   );
 };
