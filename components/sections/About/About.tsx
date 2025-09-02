@@ -9,8 +9,8 @@ const About = () => {
       <Section>
         <h2 className="text-2xl font-bold">ABOUT</h2>
         <p className="text-foreground/80">
-          22 year old Frontend Developer graduate who enjoys building stuff.
-          I&apos;m currently working for{" "}
+          22 year old Frontend Developer who enjoys building stuff. I&apos;m
+          currently working for{" "}
           <Link
             href={"https://www.redmind.se/en/"}
             target="_blank"

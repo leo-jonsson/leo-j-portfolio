@@ -3,6 +3,7 @@ import { Monda } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme/theme-provider";
 import Nav from "@/components/Nav";
+import ReactLenis from "lenis/react";
 
 const montserrat = Monda({
   variable: "--font-monda",
@@ -22,17 +23,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${montserrat.className} ${montserrat.variable} antialiased transition-all`}
-      >
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <main className="max-w-[40rem] flex flex-col justify-center items-center mx-auto">
-            {children}
-            <div className="h-[7rem]" />
-          </main>
-          <Nav />
-        </ThemeProvider>
-      </body>
+      <ReactLenis root>
+        <body
+          className={`${montserrat.className} ${montserrat.variable} antialiased transition-all`}
+        >
+          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+            <main className="max-w-[40rem] flex flex-col justify-center items-center mx-auto">
+              {children}
+              <div className="h-[7rem]" />
+            </main>
+            <Nav />
+          </ThemeProvider>
+        </body>
+      </ReactLenis>
     </html>
   );
 }
