@@ -1,5 +1,4 @@
 import Section from "@/components/ui/section";
-import Link from "next/link";
 import React from "react";
 
 const Contact = () => {
@@ -7,17 +6,9 @@ const Contact = () => {
     <Section>
       <h2 className="text-2xl font-bold">CONTACT</h2>
       <p className="text-base text-foreground/70">
-        Want to get in touch?{" "}
-        <Link
-          href={"/https://x.com/leomrgreen"}
-          target="_blank"
-          className="text-blue-500
-"
-        >
-          Just shoot me a dm on twitter
-        </Link>{" "}
-        and I&apos;ll get back ASAP. Feel free to connect with me on Linkedin
-        aswell.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat
+        recusandae blanditiis quod veniam maiores minima non odit in totam animi
+        optio, nulla voluptas odio eligendi alias explicabo ullam ex rerum!
       </p>
     </Section>
   );

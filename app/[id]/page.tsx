@@ -37,7 +37,7 @@ const ProjectPage = () => {
                   key={index}
                   src={image.url}
                   alt={image.alt}
-                  className="w-full"
+                  className="w-full rounded-sm"
                 />
               ))}
             </div>

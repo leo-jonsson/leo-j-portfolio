@@ -31,8 +31,8 @@ const Projects = () => {
       <div className="grid py-10">
         <h2 className="text-2xl font-bold">PROJECTS</h2>
         <h3 className="text-foreground/70 text-base">
-          Things I&apos;m proud of. Load more to see things I&apos;m less proud
-          of.
+          Things I&apos;m proud of. Lorem ipsum iopsum De Lori heceba para del
+          mundo.
         </h3>
       </div>
       <div className="md:grid-cols-2 grid gap-5">

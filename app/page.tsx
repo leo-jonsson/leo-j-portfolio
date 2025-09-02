@@ -6,7 +6,10 @@ import Skills from "@/components/sections/Skills";
 
 export default function Home() {
   return (
-    <div className="mx-auto flex flex-col items-center justify-center w-full gap-10 py-5">
+    <div
+      className="mx-auto flex flex-col items-center justify-center w-full gap-10 py-5"
+      id="main"
+    >
       <Intro />
       <About />
       <Skills />

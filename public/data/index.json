@@ -29,7 +29,7 @@
       }
     ],
     "period": "April 2025 - Ongoing",
-    "content": "<p>An app connected to a boat alarm for boat clubs. I have worked with both the frontend in React Native, where I followed design guidelines from Figma and adapted solutions according to the designer's wishes.</p><p>I have also worked with the backend in NestJS where the logic and functionality for the app is handled.</p><p>Since the app is connected to the alarm's hardware, I have also had the opportunity to learn how the integration between software and device works.</p>"
+    "content": "<p>Seagrid provides boat alarm solutions for both marinas/boat clubs and private boat owners. In the mobile app development, I've focused on enhancing the user interface using React Native and React Query, improving the overall user experience.</p><p>On the backend, I've played a key role in migrating our database from MongoDB to Payload CMS, including rewriting backend functions to work with Payload and developing scripts for seamless user data migration.</p><p>I've also implemented new features and improved the existing alarm logic, ensuring reliable and efficient communication between the app and the physical alarm devices.</p>"
   },
   {
     "id": "feelgood",
