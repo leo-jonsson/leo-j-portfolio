@@ -5,7 +5,7 @@ import { ThemeProvider } from "@/components/theme/theme-provider";
 import Nav from "@/components/Nav";
 import ReactLenis from "lenis/react";
 
-const montserrat = Monda({
+const monda = Monda({
   variable: "--font-monda",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
@@ -25,7 +25,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <ReactLenis root>
         <body
-          className={`${montserrat.className} ${montserrat.variable} antialiased transition-all`}
+          className={`${monda.className} ${monda.variable} antialiased transition-all`}
         >
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             <main className="max-w-[40rem] flex flex-col justify-center items-center mx-auto">
