@@ -10,7 +10,7 @@ const Contact = () => {
         Fill out the form below, but if you want me to respond even faster -
         just call or text me on{" "}
         <a href="tel:+46737043031" className="text-blue-700 dark:text-blue-500">
-          073-704 30 31
+          +46737043031
         </a>
       </p>
       <ContactForm />
