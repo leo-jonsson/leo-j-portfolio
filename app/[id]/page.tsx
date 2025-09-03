@@ -21,7 +21,7 @@ const ProjectPage = () => {
 
   return (
     <div className="min-h-[80vh] flex items-center justify-center relative mt-5">
-      <Section>
+      <Section index={0}>
         <Link href={"/"}>
           <ArrowLeft className="mb-4" />
         </Link>

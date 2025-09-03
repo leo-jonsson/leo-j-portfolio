@@ -14,7 +14,7 @@
     ],
     "images": [
       {
-        "url": "/assets/Seagrid.png",
+        "url": "/assets/Seagrid.webp",
         "alt": "image of Seagrid's website"
       }
     ],
@@ -29,7 +29,7 @@
       }
     ],
     "period": "April 2025 - Ongoing",
-    "content": "<p>Seagrid provides boat alarm solutions for both marinas/boat clubs and private boat owners. In the mobile app development, I've focused on enhancing the user interface using React Native and React Query, improving the overall user experience.</p><p>On the backend, I've played a key role in migrating our database from MongoDB to Payload CMS, including rewriting backend functions to work with Payload and developing scripts for seamless user data migration.</p><p>I've also implemented new features and improved the existing alarm logic, ensuring reliable and efficient communication between the app and the physical alarm devices.</p>"
+    "content": "<p>Seagrid is an organisation that provides boat alarm solutions for both marinas and private boat owners. In the mobile app development, I've focused on enhancing the user interface, improving the overall user experience and removed bugs found in the app.</p><p>On the backend, I've played a key role in migrating our database from MongoDB to Payload CMS, including rewriting backend functions to work with Payload and developing scripts for seamless user data migration.</p><p>I've also implemented new features and improved the existing alarm logic, ensuring reliable and efficient communication between the app and the physical alarm devices.</p><p>Right now I'm working on integrating support for new hardware that Seagrid is bringing in such as sirens and cameras.</p>"
   },
   {
     "id": "feelgood",
@@ -55,8 +55,8 @@
         "url": "https://apps.apple.com/se/app/feelgood/id1454287441"
       }
     ],
-    "period": "March 2025 - Ongoing",
-    "content": "<p>A wellness app for both businesses and individuals where I work on frontend development using React Native, following design guidelines and implementing solutions based on the designer’s requirements.</p><p>In this project, I have primarily focused on optimizing components and adding functionality that enhances the user experience.</p>"
+    "period": "March 2025 - August 2025",
+    "content": "<p>Feelgood, now part of Finland's largest healthcare provider Terveystalo, is one of Sweden's leading healthcare companies with over 1,000 employees and 155 health clinics nationwide, including 56 branded clinics.</p><p>I've worked on their app that serves both businesses and individuals, with focus on frontend development. Following strict design guidelines, I've implemented solutions based on the designer's requirements while ensuring optimal performance.</p><p>In this project, I have primarily focused on optimizing components and adding functionality that enhances the user experience across the platform.</p>"
   },
 
   {
@@ -147,7 +147,7 @@
     ]
   },
   {
-    "id": "img-gallery",
+    "id": "jsfw",
     "title": "JSFW",
     "tech": [
       "Next.js",
@@ -175,6 +175,6 @@
       }
     ],
     "period": "December 2025",
-    "content": "<p>Img Gallery is a full-stack web application developed with Next.js, serving as a comprehensive entertainment platform akin to an IMDB clone. Users can seamlessly browse an extensive database of movies and series, explore detailed information, and save their favorite titles to a personalized watchlist for later viewing.</p><p>Beyond media browsing, the platform features a robust blog section where users can publish their own articles, fostering a community for shared insights and discussions on various entertainment topics.</p><p>The application leverages a powerful tech stack including Next.js for server-side rendering and API routes, TypeScript for type safety, Uploadthing for efficient file uploads, Shadcn UI for beautiful and accessible components, Clerk for secure user authentication, and Supabase for its backend database and authentication services. Framer Motion is integrated to deliver smooth and engaging UI animations, enhancing the overall user experience.</p>"
+    "content": "<p>JSFW (JavaScript Framework school assigment), a full-stack web application developed with Next.js, serving as a comprehensive entertainment platform akin to an IMDB clone. Users can seamlessly browse an extensive database of movies and series, explore detailed information, and save their favorite titles to a personalized watchlist for later viewing.</p><p>Beyond media browsing, the platform features a robust blog section where users can publish their own articles, fostering a community for shared insights and discussions on various entertainment topics.</p><p>The application leverages a powerful tech stack including Next.js for server-side rendering and API routes, TypeScript for type safety, Uploadthing for efficient file uploads, Shadcn UI for beautiful and accessible components, Clerk for secure user authentication, and Supabase for its backend database and authentication services. Framer Motion is integrated to deliver smooth and engaging UI animations, enhancing the overall user experience.</p>"
   }
 ]

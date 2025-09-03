@@ -12,7 +12,7 @@ const monda = Monda({
 });
 
 export const metadata: Metadata = {
-  title: "Leo",
+  title: "Leo | Portfolio",
   description: "Leo Jonsson Portfolio",
 };
 
@@ -27,7 +27,7 @@ export default function RootLayout({
         <body
           className={`${monda.className} ${monda.variable} antialiased transition-all`}
         >
-          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
             <main className="max-w-[40rem] flex flex-col justify-center items-center mx-auto">
               {children}
               <div className="h-[7rem]" />

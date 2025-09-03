@@ -27,12 +27,12 @@ const Projects = () => {
   };
 
   return (
-    <Section>
+    <Section index={4}>
       <div className="grid py-10">
         <h2 className="text-2xl font-bold">PROJECTS</h2>
         <h3 className="text-foreground/70 text-base">
-          Things I&apos;m proud of. Lorem ipsum iopsum De Lori heceba para del
-          mundo.
+          Things I&apos;ve worked on. Some real world projects and some school
+          assignments.
         </h3>
       </div>
       <div className="md:grid-cols-2 grid gap-5">
@@ -45,11 +45,11 @@ const Projects = () => {
               <Link href={`/${project.id}`}>
                 {project.images[0]?.url && (
                   <Image
-                    width={1000}
+                    width={200}
                     height={100}
                     src={project.images[0].url}
                     alt={project.images[0].alt || project.title}
-                    className="w-full object-cover aspect-video"
+                    className="w-full object-cover aspect-video border-b"
                   />
                 )}
               </Link>
@@ -86,9 +86,10 @@ const Projects = () => {
       </div>
       <Button
         onClick={handleOnClick}
+        variant={"outline"}
         className={`${loadMore ? "hidden" : "flex"} w-full mt-4`}
       >
-        Load More
+        Show More
       </Button>
     </Section>
   );

@@ -6,10 +6,10 @@ import React from "react";
 const About = () => {
   return (
     <>
-      <Section>
+      <Section index={1}>
         <h2 className="text-2xl font-bold">ABOUT</h2>
         <p className="text-foreground/80">
-          22 year old Frontend Developer who enjoys building stuff. I&apos;m
+          22 year old developer who enjoys building cool stuff. I&apos;m
           currently working for{" "}
           <Link
             href={"https://www.redmind.se/en/"}
@@ -23,7 +23,7 @@ const About = () => {
           for our client&apos;s applications.
         </p>
       </Section>
-      <Section>
+      <Section index={2}>
         <h2 className="text-2xl font-bold">DEV JOURNEY</h2>
         <MyTimeLine />
       </Section>
