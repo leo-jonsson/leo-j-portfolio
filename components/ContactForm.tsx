@@ -42,7 +42,7 @@ const ContactForm = () => {
     <form
       onSubmit={sendEmail}
       ref={formRef}
-      className="w-full flex flex-col gap-5 mt-8 px-5"
+      className="w-full flex flex-col gap-5 mt-8 md:px-5 px-2"
     >
       <div className="grid gap-2">
         <Label htmlFor="emailFrom">Email address</Label>

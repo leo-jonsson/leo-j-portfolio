@@ -30,7 +30,7 @@ const Projects = () => {
     <Section index={4}>
       <div className="grid py-10">
         <h2 className="text-2xl font-bold">PROJECTS</h2>
-        <h3 className="text-foreground/70 text-base text-lg">
+        <h3 className="text-foreground/70 text-base md:text-lg">
           Some real world projects and some school assignments.
         </h3>
       </div>
