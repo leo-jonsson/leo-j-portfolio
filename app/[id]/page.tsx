@@ -5,7 +5,7 @@ import React from "react";
 import projects from "@/public/data/index.json";
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
-import Image from "next/image";
+import { Image } from "@heroui/image";
 import Section from "@/components/ui/section";
 import { ArrowLeft } from "lucide-react";
 
@@ -33,11 +33,11 @@ const ProjectPage = () => {
               {project.images.map((image, index) => (
                 <Image
                   width={1000}
-                  height={1000}
+                  height={400}
                   key={index}
                   src={image.url}
                   alt={image.alt}
-                  className="w-full rounded-sm"
+                  className="w-full rounded-sm object-cover aspect-video"
                 />
               ))}
             </div>

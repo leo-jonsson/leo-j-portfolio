@@ -2,7 +2,7 @@
 import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import Image from "next/image";
+import { Image } from "@heroui/image";
 import Section from "@/components/ui/section";
 import Link from "next/link";
 import projects from "@/public/data/index.json";
@@ -44,8 +44,7 @@ const Projects = () => {
               <Link href={`/${project.id}`}>
                 {project.images[0]?.url && (
                   <Image
-                    width={200}
-                    height={100}
+                    width={1200}
                     src={project.images[0].url}
                     alt={project.images[0].alt || project.title}
                     className="w-full object-cover aspect-video border-b"
