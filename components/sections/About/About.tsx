@@ -6,7 +6,7 @@ import React from "react";
 const About = () => {
   return (
     <>
-      <Section index={1}>
+      <Section>
         <h2 className="text-2xl font-bold">ABOUT</h2>
         <p className="text-foreground/80 md:text-lg leading-8">
           22 year old developer who enjoys building cool stuff. I&apos;m
@@ -23,7 +23,7 @@ const About = () => {
           for our client&apos;s applications.
         </p>
       </Section>
-      <Section index={2}>
+      <Section>
         <h2 className="text-2xl font-bold">DEV JOURNEY</h2>
         <MyTimeLine />
       </Section>

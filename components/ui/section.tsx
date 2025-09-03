@@ -1,17 +1,44 @@
 "use client";
 
-import React, { ReactNode } from "react";
-import { BoxReveal } from "../magicui/box-reveal";
+import React, { ReactNode, useRef, useEffect } from "react";
+import { motion, useInView, useAnimation } from "framer-motion";
 
 type SectionProps = {
   children: ReactNode;
-  index: number;
 };
 
-const Section = ({ children, index }: SectionProps) => {
+const Section = ({ children }: SectionProps) => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: false, amount: 0.5 });
+
+  const controls = useAnimation();
+
+  useEffect(() => {
+    if (isInView) {
+      controls.start("visible");
+    }
+  }, [controls, isInView]);
+
   return (
-    <section className="grid gap-2 p-2 w-full">
-      <BoxReveal duration={0.5 + index / 10}>{children}</BoxReveal>
+    <section ref={ref} className="grid gap-2 p-2 w-full">
+      <motion.div
+        initial="hidden"
+        animate={controls}
+        variants={{
+          hidden: { opacity: 0, y: 5, filter: "blur(10px)" },
+          visible: {
+            opacity: 1,
+            y: 0,
+            filter: "blur(0px)",
+            transition: {
+              duration: 0.3,
+              ease: "easeOut",
+            },
+          },
+        }}
+      >
+        {children}
+      </motion.div>
     </section>
   );
 };

@@ -22,7 +22,7 @@ const skills: string[] = [
 
 const Skills: React.FC = () => {
   return (
-    <Section index={3}>
+    <Section>
       <h2 className="text-2xl font-bold mb-3">I LIKE WORKING WITH</h2>
       <div className="flex flex-wrap gap-2">
         {skills.map((s, idx) => (

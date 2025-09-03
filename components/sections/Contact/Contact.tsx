@@ -4,7 +4,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <Section index={5}>
+    <Section>
       <h2 className="text-2xl font-bold mt-8">CONTACT</h2>
       <p className="md:text-lg text-foreground/70">
         Fill out the form below, but if you want me to respond even faster -
