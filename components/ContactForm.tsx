@@ -42,9 +42,9 @@ const ContactForm = () => {
     <form
       onSubmit={sendEmail}
       ref={formRef}
-      className="w-full flex flex-col gap-5 mt-8"
+      className="w-full flex flex-col gap-5 mt-8 px-5"
     >
-      <div className="grid gap-1">
+      <div className="grid gap-2">
         <Label htmlFor="emailFrom">Email address</Label>
         <Input
           type="email"
@@ -54,12 +54,11 @@ const ContactForm = () => {
           required
         />
       </div>
-      <div className="grid gap-1">
+      <div className="grid gap-2">
         <Label htmlFor="message">Message</Label>
         <Textarea
           name="message"
           id="message"
-          rows={5}
           placeholder="Ask me anything..."
           required
         />

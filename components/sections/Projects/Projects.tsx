@@ -30,9 +30,8 @@ const Projects = () => {
     <Section index={4}>
       <div className="grid py-10">
         <h2 className="text-2xl font-bold">PROJECTS</h2>
-        <h3 className="text-foreground/70 text-base">
-          Things I&apos;ve worked on. Some real world projects and some school
-          assignments.
+        <h3 className="text-foreground/70 text-base text-lg">
+          Some real world projects and some school assignments.
         </h3>
       </div>
       <div className="md:grid-cols-2 grid gap-5">

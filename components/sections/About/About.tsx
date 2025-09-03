@@ -8,7 +8,7 @@ const About = () => {
     <>
       <Section index={1}>
         <h2 className="text-2xl font-bold">ABOUT</h2>
-        <p className="text-foreground/80">
+        <p className="text-foreground/80 text-lg leading-8">
           22 year old developer who enjoys building cool stuff. I&apos;m
           currently working for{" "}
           <Link
