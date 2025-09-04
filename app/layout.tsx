@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme/theme-provider";
 import Nav from "@/components/Nav";
 import ReactLenis from "lenis/react";
+import { Toaster } from "@/components/ui/sonner";
 
 const monda = Monda({
   variable: "--font-monda",
@@ -28,8 +29,9 @@ export default function RootLayout({
           className={`${monda.className} ${monda.variable} antialiased transition-all`}
         >
           <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
-            <main className="max-w-[40rem] flex flex-col justify-center items-center mx-auto">
+            <main className="max-w-[40rem] flex flex-col justify-center items-center mx-auto sm:px-0 px-2">
               {children}
+              <Toaster />
               <div className="h-[7rem]" />
             </main>
             <Nav />

@@ -12,10 +12,15 @@ import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { Label } from "./ui/label";
 import { Loader2, Send } from "lucide-react";
+import { toast } from "sonner";
 
 const ContactForm = () => {
   const formRef = React.useRef<HTMLFormElement>(null);
   const [loading, setLoading] = React.useState<boolean>(false);
+
+  console.log(
+    toast("Email sent!", { description: "I will get back to you ASAP" })
+  );
 
   const sendEmail = async (e: React.FormEvent) => {
     if (!formRef.current) return;
@@ -30,8 +35,14 @@ const ContactForm = () => {
         formRef.current!,
         EMAILJS_PUBLIC_KEY
       );
+      toast.success("Email sent!", {
+        description: "I will get back to you ASAP",
+      });
     } catch (e) {
       console.error(e);
+      toast.error("Something went wrong", {
+        description: "Could not send email, please try again.",
+      });
       throw new Error("Error sending mail");
     }
     setLoading(false);
@@ -42,7 +53,7 @@ const ContactForm = () => {
     <form
       onSubmit={sendEmail}
       ref={formRef}
-      className="w-full flex flex-col gap-5 mt-8 md:px-5 px-2"
+      className="w-full flex flex-col gap-5 mt-8 "
     >
       <div className="grid gap-2">
         <Label htmlFor="emailFrom">Email address</Label>
