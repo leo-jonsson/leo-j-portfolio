@@ -37,6 +37,7 @@ const ProjectPage = () => {
                   key={index}
                   src={image.url}
                   alt={image.alt}
+                  loading="lazy"
                   className="w-full rounded-sm object-cover aspect-video"
                 />
               ))}

@@ -1,14 +1,16 @@
 // tailwind.config.js
-const {heroui} = require("@heroui/theme");
+const { heroui } = import("@heroui/theme");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./node_modules/@heroui/theme/dist/components/image.js",
-  ],
+  content: ["./node_modules/@heroui/theme/dist/components/image.js"],
   theme: {
     extend: {},
   },
   darkMode: "class",
-  plugins: [heroui()],
+  plugins: [
+    heroui({
+      addCommonColors: true,
+    }),
+  ],
 };

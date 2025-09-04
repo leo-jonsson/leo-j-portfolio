@@ -13,7 +13,7 @@ const monda = Monda({
 
 export const metadata: Metadata = {
   title: "Leo | Portfolio",
-  description: "Leo Jonsson's Portfolio",
+  description: "Leo Jonsson A Portfolio",
 };
 
 export default function RootLayout({
