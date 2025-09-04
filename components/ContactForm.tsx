@@ -18,10 +18,6 @@ const ContactForm = () => {
   const formRef = React.useRef<HTMLFormElement>(null);
   const [loading, setLoading] = React.useState<boolean>(false);
 
-  console.log(
-    toast("Email sent!", { description: "I will get back to you ASAP" })
-  );
-
   const sendEmail = async (e: React.FormEvent) => {
     if (!formRef.current) return;
 
