@@ -13,11 +13,13 @@ import { Textarea } from "./ui/textarea";
 import { Label } from "./ui/label";
 import { Loader2, Send } from "lucide-react";
 import { toast } from "sonner";
+import { TextLoop } from "./motion-primitives/text-loop";
 
 const ContactForm = () => {
   const formRef = React.useRef<HTMLFormElement>(null);
   const [loading, setLoading] = React.useState<boolean>(false);
-
+  const [message, setMessage] = React.useState<string>("");
+  const [isFocus, setIsFocus] = React.useState<boolean>(false);
   const sendEmail = async (e: React.FormEvent) => {
     if (!formRef.current) return;
 
@@ -63,13 +65,28 @@ const ContactForm = () => {
       </div>
       <div className="grid gap-2">
         <Label htmlFor="message">Message</Label>
-        <Textarea
-          name="message"
-          id="message"
-          placeholder="Ask me anything..."
-          required
-        />
+        <div className="relative">
+          <Textarea
+            name="message"
+            id="message"
+            required
+            onFocus={() => setIsFocus(true)}
+            onBlur={() => setIsFocus(false)}
+            onChange={(e) => setMessage(e.target.value)}
+          />
+          <TextLoop
+            className={`text-sm pointer-events-none absolute top-2 left-2 text-muted-foreground ${
+              message != "" || isFocus ? "opacity-0" : "opacity-100"
+            }`}
+          >
+            <span>I&apos;d love to collaborate</span>
+            <span>We should work together</span>
+            <span>I&apos;ve been wanted to ask you...</span>
+            <span>How did you build this?</span>
+          </TextLoop>
+        </div>
       </div>
+
       <Button type="submit" disabled={loading}>
         <span>Send</span>{" "}
         {!loading ? <Send /> : <Loader2 className="animate-spin" />}
