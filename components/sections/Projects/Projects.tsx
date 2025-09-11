@@ -2,12 +2,12 @@
 import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Image } from "@heroui/image";
 import Section from "@/components/ui/section";
 import Link from "next/link";
 import projects from "@/public/data/index.json";
 import { Button } from "@/components/ui/button";
 import { AnimatePresence, motion } from "framer-motion";
+import Image from "next/image";
 
 type Project = {
   id: string;
@@ -54,6 +54,7 @@ const Projects = () => {
                     {project.images[0]?.url && (
                       <Image
                         width={1200}
+                        height={1000}
                         src={project.images[0].url}
                         alt={project.images[0].alt || project.title}
                         loading="lazy"

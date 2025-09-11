@@ -5,9 +5,10 @@ import React from "react";
 import projects from "@/public/data/index.json";
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
-import { Image } from "@heroui/image";
+
 import Section from "@/components/ui/section";
 import { ArrowLeft } from "lucide-react";
+import Image from "next/image";
 
 const ProjectPage = () => {
   const params = useParams();
@@ -33,7 +34,7 @@ const ProjectPage = () => {
               {project.images.map((image, index) => (
                 <Image
                   width={1000}
-                  height={400}
+                  height={500}
                   key={index}
                   src={image.url}
                   alt={image.alt}
