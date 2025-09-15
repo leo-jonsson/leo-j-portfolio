@@ -9,7 +9,7 @@ const About = () => {
       <Section>
         <h2 className="text-2xl font-bold">ABOUT</h2>
         <p className="text-foreground/80 md:text-lg md:leading-8">
-          22 year old developer who enjoys building cool stuff. I&apos;m
+          23 year old developer who enjoys building cool stuff. I&apos;m
           currently working for{" "}
           <Link
             href={"https://www.redmind.se/en/"}
