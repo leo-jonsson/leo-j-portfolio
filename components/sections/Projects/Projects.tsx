@@ -8,6 +8,7 @@ import projects from "@/public/data/index.json";
 import { Button } from "@/components/ui/button";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
+import { Skeleton } from "@/components/ui/skeleton";
 
 type Project = {
   id: string;
@@ -52,14 +53,17 @@ const Projects = () => {
                 <CardHeader className="p-0">
                   <Link href={`/${project.id}`}>
                     {project.images[0]?.url && (
-                      <Image
-                        width={1200}
-                        height={1000}
-                        src={project.images[0].url}
-                        alt={project.images[0].alt || project.title}
-                        loading="lazy"
-                        className="w-full object-cover aspect-video border-b"
-                      />
+                      <div className="relative w-full h-full aspect-video border-b">
+                        <Image
+                          width={1200}
+                          height={1000}
+                          src={project.images[0].url}
+                          alt={project.images[0].alt || project.title}
+                          loading="lazy"
+                          className="absolute size-full inset-0 object-cover z-10"
+                        />
+                        <Skeleton className="size-full inset-0 z-0 rounded-none" />
+                      </div>
                     )}
                   </Link>
                 </CardHeader>
