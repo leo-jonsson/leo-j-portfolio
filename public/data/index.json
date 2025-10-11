@@ -16,6 +16,10 @@
       {
         "url": "/assets/Seagrid.webp",
         "alt": "image of Seagrid's website"
+      },
+      {
+        "url": "/assets/Seagrid2.png",
+        "alt": "Wireframes"
       }
     ],
     "links": [
@@ -29,7 +33,7 @@
       }
     ],
     "period": "April 2025 - Ongoing",
-    "content": "<p>Seagrid is an organisation that provides boat alarm solutions for both marinas and private boat owners. In the mobile app development, I've focused on enhancing the user interface, improving the overall user experience and removed bugs found in the app.</p><p>On the backend, I've played a key role in migrating our database from MongoDB to Payload CMS, including rewriting backend functions to work with Payload and developing scripts for seamless user data migration.</p><p>I've also implemented new features and improved the existing alarm logic, ensuring reliable and efficient communication between the app and the physical alarm devices.</p><p>Right now I'm working on integrating support for new hardware that Seagrid is bringing in such as sirens and cameras.</p>"
+    "content": "<p>Seagrid is an organization that provides boat alarm solutions for both marinas and private boat owners.</p><p>In the mobile app development, I’ve focused on enhancing the user interface, improving the overall user experience, and fixing bugs found in the app.</p><p>On the backend, I’ve played a key role in migrating our database from <strong>MongoDB</strong> to <strong>Payload CMS</strong>. This included rewriting backend functions to work with Payload and developing scripts for seamless user data migration.</p><p>I’ve also implemented new features and improved the existing alarm logic, ensuring reliable and efficient communication between the app and the physical alarm devices.</p><p>I’m currently working on rebuilding the app’s structure. This involves redesigning existing components in <strong>Figma</strong> as well as creating new ones, which I then implement in the frontend code.</p><p>Seagrid’s latest feature, <strong>Marinas</strong>, allows users to join marinas and boat clubs across Sweden within Seagrid’s network. This led my team and me to reconsider the app’s architecture and create a new type of hierarchy by introducing a top-bar navigation.</p>"
   },
   {
     "id": "feelgood",
