@@ -107,7 +107,7 @@ const Projects = () => {
         <Button
           onClick={handleOnClick}
           variant={"outline"}
-          className={`${loadMore ? "hidden" : "flex"} w-full mt-4`}
+          className={`${loadMore ? "hidden" : "flex"} w-full mt-4 shadow-sm`}
         >
           Show More
         </Button>

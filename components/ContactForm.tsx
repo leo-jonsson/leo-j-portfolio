@@ -87,7 +87,7 @@ const ContactForm = () => {
         </div>
       </div>
 
-      <Button type="submit" disabled={loading}>
+      <Button type="submit" disabled={loading} className="shadow-sm">
         <span>Send</span>{" "}
         {!loading ? <Send /> : <Loader2 className="animate-spin" />}
       </Button>
