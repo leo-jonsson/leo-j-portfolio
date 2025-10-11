@@ -14,15 +14,16 @@ import { Label } from "./ui/label";
 import { Loader2, Send } from "lucide-react";
 import { toast } from "sonner";
 import { TextLoop } from "./motion-primitives/text-loop";
+import { filterProps } from "framer-motion";
 
 const ContactForm = () => {
   const formRef = React.useRef<HTMLFormElement>(null);
   const [loading, setLoading] = React.useState<boolean>(false);
   const [message, setMessage] = React.useState<string>("");
   const [isFocus, setIsFocus] = React.useState<boolean>(false);
+
   const sendEmail = async (e: React.FormEvent) => {
     if (!formRef.current) return;
-
     e.preventDefault();
 
     setLoading(true);
