@@ -3,7 +3,6 @@ import { Monda } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme/theme-provider";
 import Nav from "@/components/Nav";
-import ReactLenis from "lenis/react";
 import { Toaster } from "@/components/ui/sonner";
 
 const monda = Monda({
@@ -24,20 +23,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <ReactLenis root>
-        <body
-          className={`${monda.className} ${monda.variable} antialiased transition-all`}
-        >
-          <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
-            <main className="max-w-[40rem] flex flex-col justify-center items-center mx-auto sm:px-0 px-2">
-              {children}
-              <Toaster />
-              <div className="h-[7rem]" />
-            </main>
-            <Nav />
-          </ThemeProvider>
-        </body>
-      </ReactLenis>
+      <body
+        className={`${monda.className} ${monda.variable} antialiased transition-all`}
+      >
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
+          <main className="max-w-[40rem] flex flex-col justify-center items-center mx-auto sm:px-0 px-2">
+            {children}
+            <Toaster />
+            <div className="h-[7rem]" />
+          </main>
+          <Nav />
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
