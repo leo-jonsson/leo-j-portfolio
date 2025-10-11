@@ -43,8 +43,8 @@ const ProjectPage = () => {
                   <CarouselItem key={index} className="aspect-video relative">
                     <Skeleton className="w-full h-full z-0 absolute inset-0" />
                     <Image
-                      width={1000}
-                      height={500}
+                      width={2000}
+                      height={1200}
                       src={image.url}
                       alt={image.alt}
                       loading="lazy"
