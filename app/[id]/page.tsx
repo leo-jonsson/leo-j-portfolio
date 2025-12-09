@@ -1,36 +1,35 @@
-"use client";
+'use client'
 
-import { useParams } from "next/navigation";
-import React from "react";
-import projects from "@/public/data/index.json";
-import Link from "next/link";
-import { Badge } from "@/components/ui/badge";
+import { Badge } from '@/components/ui/badge'
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel";
-import Section from "@/components/ui/section";
-import { ArrowLeft } from "lucide-react";
-import Image from "next/image";
-import { Skeleton } from "@/components/ui/skeleton";
+} from '@/components/ui/carousel'
+import Section from '@/components/ui/section'
+import { Skeleton } from '@/components/ui/skeleton'
+import PROJECTS from '@/lib/projects'
+import { ArrowLeft } from 'lucide-react'
+import Image from 'next/image'
+import Link from 'next/link'
+import { useParams } from 'next/navigation'
 
 const ProjectPage = () => {
-  const params = useParams();
-  const projectId = params.id as string;
+  const params = useParams()
+  const projectId = params.id as string
 
-  const project = projects.find((p) => p.id === projectId);
+  const project = PROJECTS.find(p => p.id === projectId)
 
   if (!project) {
-    return <div>Project not found.</div>;
+    return <div>Project not found.</div>
   }
 
   return (
     <div className="flex items-center justify-center relative pt-10">
       <Section>
-        <Link href={"/"}>
+        <Link href={'/'}>
           <ArrowLeft className="mb-4" />
         </Link>
         <h1 className="text-5xl font-bold mb-2">{project.title}</h1>
@@ -73,11 +72,7 @@ const ProjectPage = () => {
             <ul className="flex items-center gap-4">
               {project.links.map((link, index) => (
                 <li key={index}>
-                  <Link
-                    href={link.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                  <Link href={link.url} target="_blank" rel="noopener noreferrer">
                     <Badge>{link.label}</Badge>
                   </Link>
                 </li>
@@ -87,7 +82,7 @@ const ProjectPage = () => {
         )}
       </Section>
     </div>
-  );
-};
+  )
+}
 
-export default ProjectPage;
+export default ProjectPage

@@ -1,39 +1,31 @@
-"use client";
-import React from "react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import Section from "@/components/ui/section";
-import Link from "next/link";
-import projects from "@/public/data/index.json";
-import { Button } from "@/components/ui/button";
-import { AnimatePresence, motion } from "framer-motion";
-import Image from "next/image";
-import { Skeleton } from "@/components/ui/skeleton";
+'use client'
+import { Badge } from '@/components/ui/badge'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import Section from '@/components/ui/section'
+import Link from 'next/link'
+import React from 'react'
 
-type Project = {
-  id: string;
-  title: string;
-  tech: string[];
-  images: { url: string; alt: string }[];
-  links?: { label: string; url: string }[];
-  period: string;
-  content: string;
-};
+import { Button } from '@/components/ui/button'
+import { Skeleton } from '@/components/ui/skeleton'
+import PROJECTS, { Project } from '@/lib/projects'
+import { AnimatePresence, motion } from 'framer-motion'
+import Image from 'next/image'
+
 const Projects = () => {
-  const [loadMore, setLoadMore] = React.useState<boolean>(false);
+  const [loadMore, setLoadMore] = React.useState<boolean>(false)
 
-  const projectsToShow = loadMore ? projects : projects.slice(0, 2);
+  const projectsToShow = loadMore ? PROJECTS : PROJECTS.slice(0, 2)
 
   const handleOnClick = () => {
-    setLoadMore(true);
-  };
+    setLoadMore(true)
+  }
 
   return (
     <Section>
       <div className="grid py-10">
         <h2 className="text-2xl font-bold">PROJECTS</h2>
         <h3 className="text-foreground/70 text-base md:text-lg">
-          Some real world projects and some school assignments.
+          Some real world projects and some old work from school.
         </h3>
       </div>
       <div className="md:grid-cols-2 grid gap-5">
@@ -80,12 +72,7 @@ const Projects = () => {
                   {project.links && (
                     <div className="flex flex-wrap gap-3 mt-3">
                       {project.links.map((link, idx) => (
-                        <Link
-                          key={idx}
-                          href={link.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
+                        <Link key={idx} href={link.url} target="_blank" rel="noopener noreferrer">
                           <Badge key={idx} variant="default">
                             {link.label}
                           </Badge>
@@ -99,21 +86,17 @@ const Projects = () => {
           ))}
         </AnimatePresence>
       </div>
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-      >
+      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
         <Button
           onClick={handleOnClick}
-          variant={"outline"}
-          className={`${loadMore ? "hidden" : "flex"} w-full mt-4 shadow-sm`}
+          variant={'outline'}
+          className={`${loadMore ? 'hidden' : 'flex'} w-full mt-4 shadow-sm`}
         >
           Show More
         </Button>
       </motion.div>
     </Section>
-  );
-};
+  )
+}
 
-export default Projects;
+export default Projects

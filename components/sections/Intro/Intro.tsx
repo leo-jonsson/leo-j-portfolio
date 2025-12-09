@@ -1,5 +1,4 @@
-import Image from "next/image";
-import React from "react";
+import Image from 'next/image'
 
 const Intro = () => {
   return (
@@ -7,9 +6,7 @@ const Intro = () => {
       <div className="w-full flex items-center justify-between">
         <div>
           <h1 className="text-5xl font-bold">Leo Jonsson A.</h1>
-          <p className="text-2xl text-muted-foreground ml-0.5 mt-1">
-            React Developer
-          </p>
+          <p className="text-2xl text-muted-foreground ml-0.5 mt-1">Software Developer</p>
         </div>
         <Image
           src="/assets/Me.jpeg"
@@ -20,7 +17,7 @@ const Intro = () => {
         />
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Intro;
+export default Intro
