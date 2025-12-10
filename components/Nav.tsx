@@ -1,7 +1,6 @@
-import Link from "next/link";
-import React from "react";
-import { ModeToggle } from "./theme/theme-toggle";
-import DownloadCVButton from "./DownloadCVButton";
+import Link from 'next/link'
+import DownloadCVButton from './DownloadCVButton'
+import { ModeToggle } from './theme/theme-toggle'
 
 const Nav = () => {
   return (
@@ -9,14 +8,14 @@ const Nav = () => {
       <div className="flex items-center justify-center gap-3 bg-background px-5 md:px-1 py-1 border rounded-full shadow-xl">
         <DownloadCVButton />
         <Link
-          href={"https://www.linkedin.com/in/leo-jonsson-anetoft-b98048304/"}
+          href={'https://www.linkedin.com/in/leo-jonsson-a-b98048304/'}
           target="_blank"
           className="hover:underline transition-all"
         >
           Linkedin
         </Link>
         <Link
-          href={"https://github.com/leo-jonsson"}
+          href={'https://github.com/leo-jonsson'}
           target="_blank"
           className="hover:underline transition-all"
         >
@@ -25,7 +24,7 @@ const Nav = () => {
         <ModeToggle />
       </div>
     </nav>
-  );
-};
+  )
+}
 
-export default Nav;
+export default Nav
