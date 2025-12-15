@@ -4,7 +4,7 @@ import { ModeToggle } from './theme/theme-toggle'
 
 const Nav = () => {
   return (
-    <nav className="fixed bottom-4 flex items-center justify-center w-full gap-3 z-[999]">
+    <nav className="fixed bottom-4 flex items-center justify-center w-full gap-3 z-[999] font-sans">
       <div className="flex items-center justify-center gap-3 bg-background px-5 md:px-1 py-1 border rounded-full shadow-xl">
         <DownloadCVButton />
         <Link

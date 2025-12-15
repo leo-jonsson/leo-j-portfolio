@@ -6,7 +6,7 @@ import PROJECTS from '@/lib/projects'
 
 const Projects = () => {
   return (
-    <Section delay={0.5}>
+    <Section delay={0.5} id="projects">
       <div className="grid py-10">
         <h2 className="text-2xl font-bold">PROJECTS</h2>
         <h3 className="text-foreground/70 text-base md:text-lg">My latest work.</h3>

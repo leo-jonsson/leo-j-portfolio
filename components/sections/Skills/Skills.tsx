@@ -22,7 +22,7 @@ const skills: string[] = [
 
 const Skills: React.FC = () => {
   return (
-    <Section delay={0.6}>
+    <Section delay={0.6} id="tech_stack">
       <h2 className="text-2xl font-bold mb-3">I LIKE WORKING WITH</h2>
       <div className="flex flex-wrap gap-2">
         {skills.map((s, idx) => (
