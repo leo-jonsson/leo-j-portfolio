@@ -52,7 +52,7 @@ const ResumeCard = ({
         <div className="flex-grow ml-4 items-center flex-col group">
           <CardHeader>
             <div className="flex items-center justify-between gap-x-2 text-base">
-              <h3 className="inline-flex items-center justify-center font-semibold leading-none text-xs sm:text-sm">
+              <h3 className="inline-flex items-center justify-center font-semibold leading-none sm:text-sm">
                 {title}
                 <ChevronRightIcon
                   className={cn(
@@ -61,7 +61,9 @@ const ResumeCard = ({
                   )}
                 />
               </h3>
-              <div className="text-sm tabular-nums text-muted-foreground text-right">{period}</div>
+              <div className=" text-muted-foreground text-right text-sm font-mono uppercase">
+                {period}
+              </div>
             </div>
             {subtitle && <div className="font-sans text-sm text-foreground/80">{subtitle}</div>}
           </CardHeader>

@@ -30,7 +30,7 @@ const Intro = () => {
               by="character"
               as={'h1'}
               once
-              className="text-5xl font-bold  z-20 "
+              className="text-2xl sm:text-5xl font-bold  z-20 "
             >
               LEO JONSSON A.
             </TextAnimate>
@@ -40,7 +40,7 @@ const Intro = () => {
               by="line"
               delay={1}
               as={'h2'}
-              className="text-2xl text-muted-foreground font-normal uppercase"
+              className="text-xl sm:text-2xl text-muted-foreground font-normal uppercase"
             >
               Software Developer with focus on development in React w/ TypeScript
             </TextAnimate>
