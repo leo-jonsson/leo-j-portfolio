@@ -1,8 +1,9 @@
+import Section from '@/components/ui/section'
 import Image from 'next/image'
 
 const Intro = () => {
   return (
-    <section className="w-full grid gap-2 p-2">
+    <Section delay={0.1}>
       <div className="w-full flex items-center justify-between">
         <div>
           <h1 className="text-5xl font-bold">Leo Jonsson A.</h1>
@@ -16,7 +17,7 @@ const Intro = () => {
           className="rounded-full object-cover grayscale md:block hidden"
         />
       </div>
-    </section>
+    </Section>
   )
 }
 

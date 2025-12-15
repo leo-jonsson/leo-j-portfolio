@@ -1,100 +1,32 @@
 'use client'
-import { Badge } from '@/components/ui/badge'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import Section from '@/components/ui/section'
-import Link from 'next/link'
-import React from 'react'
 
-import { Button } from '@/components/ui/button'
-import { Skeleton } from '@/components/ui/skeleton'
-import PROJECTS, { Project } from '@/lib/projects'
-import { AnimatePresence, motion } from 'framer-motion'
-import Image from 'next/image'
+import ResumeCard from '@/components/ResumeCard'
+import Section from '@/components/ui/section'
+import PROJECTS from '@/lib/projects'
 
 const Projects = () => {
-  const [loadMore, setLoadMore] = React.useState<boolean>(false)
-
-  const projectsToShow = loadMore ? PROJECTS : PROJECTS.slice(0, 2)
-
-  const handleOnClick = () => {
-    setLoadMore(true)
-  }
-
   return (
-    <Section>
+    <Section delay={0.5}>
       <div className="grid py-10">
         <h2 className="text-2xl font-bold">PROJECTS</h2>
-        <h3 className="text-foreground/70 text-base md:text-lg">
-          Some real world projects and some old work from school.
-        </h3>
+        <h3 className="text-foreground/70 text-base md:text-lg">My latest work.</h3>
       </div>
-      <div className="md:grid-cols-2 grid gap-5">
-        <AnimatePresence>
-          {projectsToShow.map((project: Project, index) => (
-            <motion.div
-              key={project.id}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{
-                duration: 0.2,
-                delay: index * 0.07,
-              }}
-            >
-              <Card className="p-0 overflow-hidden gap-0 bg-background">
-                <CardHeader className="p-0">
-                  <Link href={`/${project.id}`}>
-                    {project.images[0]?.url && (
-                      <div className="relative w-full h-full aspect-video border-b">
-                        <Image
-                          width={1200}
-                          height={1000}
-                          src={project.images[0].url}
-                          alt={project.images[0].alt || project.title}
-                          loading="lazy"
-                          className="absolute size-full inset-0 object-cover z-10"
-                        />
-                        <Skeleton className="size-full inset-0 z-0 rounded-none" />
-                      </div>
-                    )}
-                  </Link>
-                </CardHeader>
-                <CardContent className="space-y-2 p-2">
-                  <CardTitle>{project.title}</CardTitle>
-                  <p className="text-sm text-foreground/80">{project.period}</p>
-                  <div className="flex flex-wrap gap-2 mt-5">
-                    {project.tech.map((tech, idx) => (
-                      <Badge key={idx} variant="secondary">
-                        {tech}
-                      </Badge>
-                    ))}
-                  </div>
-                  {project.links && (
-                    <div className="flex flex-wrap gap-3 mt-3">
-                      {project.links.map((link, idx) => (
-                        <Link key={idx} href={link.url} target="_blank" rel="noopener noreferrer">
-                          <Badge key={idx} variant="default">
-                            {link.label}
-                          </Badge>
-                        </Link>
-                      ))}
-                    </div>
-                  )}
-                </CardContent>
-              </Card>
-            </motion.div>
-          ))}
-        </AnimatePresence>
+      <div className="grid gap-4">
+        {PROJECTS.map(project => (
+          <span key={project.id} className="">
+            <ResumeCard
+              logoUrl={project.images[0]?.url || ''}
+              altText={project.images[0]?.alt || project.title}
+              title={project.title}
+              subtitle={project.jobTitle}
+              period={project.period}
+              description={project.content}
+              highlights={project.highlights}
+              badges={project.tech}
+            />
+          </span>
+        ))}
       </div>
-      <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-        <Button
-          onClick={handleOnClick}
-          variant={'outline'}
-          className={`${loadMore ? 'hidden' : 'flex'} w-full mt-4 shadow-sm`}
-        >
-          Show More
-        </Button>
-      </motion.div>
     </Section>
   )
 }

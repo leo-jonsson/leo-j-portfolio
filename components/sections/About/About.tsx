@@ -5,7 +5,7 @@ import Link from 'next/link'
 const About = () => {
   return (
     <>
-      <Section>
+      <Section delay={0.2}>
         <h2 className="text-2xl font-bold">ABOUT</h2>
         <p className="text-foreground/80 md:text-lg md:leading-8">
           23 year old developer who enjoys building cool stuff. I&apos;m currently working for{' '}
@@ -20,7 +20,7 @@ const About = () => {
           maintaning and scaling backends for our client&apos;s applications.
         </p>
       </Section>
-      <Section>
+      <Section delay={0.3}>
         <h2 className="text-2xl font-bold">DEV JOURNEY</h2>
         <MyTimeLine />
       </Section>

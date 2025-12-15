@@ -2,11 +2,11 @@ import Nav from '@/components/Nav'
 import { ThemeProvider } from '@/components/theme/theme-provider'
 import { Toaster } from '@/components/ui/sonner'
 import type { Metadata } from 'next'
-import { Monda } from 'next/font/google'
+import { Geist } from 'next/font/google'
 import './globals.css'
 
-const monda = Monda({
-  variable: '--font-monda',
+const geist = Geist({
+  variable: '--font-geist',
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
 })
@@ -23,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${monda.className} ${monda.variable} antialiased transition-all`}>
+      <body className={`${geist.className} ${geist.variable} antialiased transition-all`}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
           <main className="max-w-[40rem] flex flex-col justify-center items-center mx-auto sm:px-0 px-2">
             {children}

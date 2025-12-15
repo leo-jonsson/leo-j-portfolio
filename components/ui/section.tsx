@@ -1,23 +1,24 @@
-"use client";
+'use client'
 
-import React, { ReactNode, useRef, useEffect } from "react";
-import { motion, useInView, useAnimation } from "framer-motion";
+import { motion, useAnimation, useInView } from 'framer-motion'
+import { ReactNode, useEffect, useRef } from 'react'
 
 type SectionProps = {
-  children: ReactNode;
-};
+  children: ReactNode
+  delay: number
+}
 
-const Section = ({ children }: SectionProps) => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: false, amount: 0.5 });
+const Section = ({ children, delay }: SectionProps) => {
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: false, amount: 0.5 })
 
-  const controls = useAnimation();
+  const controls = useAnimation()
 
   useEffect(() => {
     if (isInView) {
-      controls.start("visible");
+      controls.start('visible')
     }
-  }, [controls, isInView]);
+  }, [controls, isInView])
 
   return (
     <section ref={ref} className="grid gap-2 p-2 w-full">
@@ -25,11 +26,12 @@ const Section = ({ children }: SectionProps) => {
         initial="hidden"
         animate={controls}
         variants={{
-          hidden: { opacity: 0 },
+          hidden: { opacity: 0, transform: 'translateY(20px)' },
           visible: {
             opacity: 1,
+            transform: 'translateY(0)',
             transition: {
-              duration: 0.3,
+              duration: 0.7 + delay,
             },
           },
         }}
@@ -37,7 +39,7 @@ const Section = ({ children }: SectionProps) => {
         {children}
       </motion.div>
     </section>
-  );
-};
+  )
+}
 
-export default Section;
+export default Section
