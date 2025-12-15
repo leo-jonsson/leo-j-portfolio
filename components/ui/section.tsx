@@ -23,7 +23,7 @@ const Section = ({ children, delay = 0, skipAnimation = false, id }: SectionProp
   }, [controls, isInView])
 
   return (
-    <section ref={ref} className="grid gap-2 pt-8 w-full font-sans" id={id}>
+    <section ref={ref} className="grid gap-2 pt-8 px-2 w-full font-sans" id={id}>
       {skipAnimation ? (
         children
       ) : (
