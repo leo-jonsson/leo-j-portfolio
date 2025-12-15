@@ -3,7 +3,7 @@ import Intro from '@/components/sections/Intro'
 import { ThemeProvider } from '@/components/theme/theme-provider'
 import { Toaster } from '@/components/ui/sonner'
 import type { Metadata } from 'next'
-import { Geist, JetBrains_Mono } from 'next/font/google'
+import { Geist, JetBrains_Mono as Geist_Mono } from 'next/font/google'
 import './globals.css'
 
 const geist = Geist({
@@ -12,7 +12,7 @@ const geist = Geist({
   weight: ['400', '500', '600', '700'],
 })
 
-const geist_mono = JetBrains_Mono({
+const geist_mono = Geist_Mono({
   variable: '--font-geist-mono',
   weight: ['200', '400', '600', '700', '800'],
   subsets: ['latin'],

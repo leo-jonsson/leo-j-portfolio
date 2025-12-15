@@ -8,8 +8,10 @@ const Projects = () => {
   return (
     <Section delay={0.5} id="projects">
       <div className="grid py-10">
-        <h2 className="text-2xl font-bold">PROJECTS</h2>
-        <h3 className="text-foreground/70 text-base md:text-lg">My latest work.</h3>
+        <h2 className="text-3xl font-bold font-mono">PROJECTS</h2>
+        <h3 className="text-foreground/70 text-base md:text-lg">
+          Things I&apos;ve been working on lately.
+        </h3>
       </div>
       <div className="grid gap-4">
         {PROJECTS.map(project => (
