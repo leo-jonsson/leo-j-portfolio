@@ -15,6 +15,7 @@ const geist = Geist({
 const geist_mono = JetBrains_Mono({
   variable: '--font-geist-mono',
   weight: ['200', '400', '600', '700', '800'],
+  subsets: ['latin'],
 })
 
 export const metadata: Metadata = {
