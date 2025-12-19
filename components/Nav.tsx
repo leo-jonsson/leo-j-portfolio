@@ -4,8 +4,8 @@ import { ModeToggle } from './theme/theme-toggle'
 
 const Nav = () => {
   return (
-    <nav className="fixed bottom-4 flex items-center justify-center w-full gap-3 z-[999] font-sans">
-      <div className="flex items-center justify-center gap-3 bg-background px-5 md:px-1 py-1 border rounded-full shadow-xl">
+    <nav className="fixed bottom-4 flex items-center justify-center w-full gap-3 z-[999] font-sans ">
+      <div className="flex items-center justify-center gap-3 bg-background px-5 md:px-1 py-1 border rounded-full shadow-2xl">
         <DownloadCVButton />
         <Link
           href={'https://www.linkedin.com/in/leo-jonsson-a-b98048304/'}

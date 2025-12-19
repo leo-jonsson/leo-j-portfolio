@@ -2,11 +2,10 @@
 
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Badge } from '@/components/ui/badge'
-import { Card, CardHeader } from '@/components/ui/card'
+import { CardHeader } from '@/components/ui/card'
 import { cn } from '@/lib/utils'
 import { motion } from 'framer-motion'
 import { ChevronRightIcon } from 'lucide-react'
-import Link from 'next/link'
 import React from 'react'
 
 interface ResumeCardProps {
@@ -25,7 +24,7 @@ const ResumeCard = ({
   altText,
   title,
   subtitle,
-  href,
+
   badges,
   period,
   description,
@@ -41,10 +40,10 @@ const ResumeCard = ({
   }
 
   return (
-    <Link href={href || '#'} className="block cursor-pointer" onClick={handleClick}>
-      <Card className="flex bg-none">
-        <div className="flex-none">
-          <Avatar className="border size-12 dark:bg-foreground">
+    <span className="block cursor-pointer" onClick={handleClick}>
+      <div className="flex bg-none">
+        <div className="flex">
+          <Avatar className="border size-8 lg:size-12 dark:bg-foreground">
             <AvatarImage src={logoUrl} alt={altText} className="object-cover" />
             <AvatarFallback>{altText[0]}</AvatarFallback>
           </Avatar>
@@ -61,7 +60,7 @@ const ResumeCard = ({
                   )}
                 />
               </h3>
-              <div className=" text-muted-foreground text-right text-xs sm:text-sm font-mono uppercase">
+              <div className="text-muted-foreground text-right text-xs sm:text-sm font-mono uppercase">
                 {period}
               </div>
             </div>
@@ -103,8 +102,8 @@ const ResumeCard = ({
             </motion.div>
           )}
         </div>
-      </Card>
-    </Link>
+      </div>
+    </span>
   )
 }
 
