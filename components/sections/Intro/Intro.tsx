@@ -44,8 +44,8 @@ const Intro = () => {
         />
       </div>
       <div className="w-full grid lg:grid-cols-2 overflow-hidden relative max-w-[120rem] h-screen font-mono mx-auto py-2">
-        <div className="flex flex-col lg:justify-around justify-center lg:gap:0 gap-8 w-full ">
-          <div className="max-w-[35rem] w-full  max-h-[20rem] top-4 pl-8">
+        <div className="flex flex-col lg:justify-around justify-center lg:gap:0 gap-8 w-full px-2 ">
+          <div className="max-w-[35rem] w-full  max-h-[20rem] top-4 lg:pl-8">
             <TextAnimate
               delay={0.8}
               animation="slideLeft"
@@ -67,7 +67,7 @@ const Intro = () => {
               Software Developer with focus on development in React w/ TypeScript
             </TextAnimate>
           </div>
-          <ul className="grid gap-2 pl-8 text-xl tabular-nums">
+          <ul className="grid gap-2  lg:pl-8 text-xl tabular-nums">
             {navLinks.map((link, index) => (
               <li
                 className="list-none tabular-nums text-muted-foreground hover:text-primary transition-colors w-fit"
