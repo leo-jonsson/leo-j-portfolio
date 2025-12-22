@@ -4,21 +4,21 @@ import Section from '@/components/ui/section'
 import { TextAnimate } from '@/components/ui/text-animate'
 import Link from 'next/link'
 
-type IntroImage = { url: string; isLandscape: boolean }
+// type IntroImage = { url: string; isLandscape: boolean }
 
-const IMAGES: IntroImage[] = [
-  { url: 'img11.JPG', isLandscape: false },
-  { url: 'img1.JPG', isLandscape: true },
-  { url: 'img10.JPG', isLandscape: false },
-  // { url: 'img2.jpeg', isLandscape: true },
-  { url: 'img12.JPG', isLandscape: true },
-  { url: 'img4.jpeg', isLandscape: false },
-  { url: 'img5.JPG', isLandscape: false },
-  // { url: 'img6.JPG', isLandscape: false },
-  { url: 'img8.JPG', isLandscape: false },
-  { url: 'img7.JPG', isLandscape: true },
-  { url: 'img9.JPG', isLandscape: false },
-]
+// const IMAGES: IntroImage[] = [
+//   { url: 'img11.JPG', isLandscape: false },
+//   { url: 'img1.JPG', isLandscape: true },
+//   { url: 'img10.JPG', isLandscape: false },
+//   // { url: 'img2.jpeg', isLandscape: true },
+//   { url: 'img12.JPG', isLandscape: true },
+//   { url: 'img4.jpeg', isLandscape: false },
+//   { url: 'img5.JPG', isLandscape: false },
+//   // { url: 'img6.JPG', isLandscape: false },
+//   { url: 'img8.JPG', isLandscape: false },
+//   { url: 'img7.JPG', isLandscape: true },
+//   { url: 'img9.JPG', isLandscape: false },
+// ]
 
 const navLinks = [
   { id: 'about', label: 'ABOUT', delay: 3.2 },
