@@ -34,8 +34,8 @@ export default function RootLayout({
         className={`${geist.className} ${geist.variable} ${geist_mono.className} ${geist_mono.variable} antialiased transition-all`}
       >
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
-          <Intro />
           <main className="max-w-[40rem] flex flex-col justify-center items-center mx-auto sm:px-0 px-2 m-0">
+            <Intro />
             {children}
             <Toaster />
             <div className="h-[7rem]" />
